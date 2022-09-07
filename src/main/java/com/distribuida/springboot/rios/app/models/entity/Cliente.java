@@ -24,6 +24,11 @@ public class Cliente implements Serializable{
 	@Column(name="create_at")
 	private Date createAt;
 	
+	//CREAMOS UN METODO QUE SE EJECUTE ANTES QUE SE GUARDEN LOS DATOS
+	public void prePersist() {
+		
+	}
+	
 	//GENERACION DE METODOS GETTER AND SETTERS
 	public Long getId() {
 		return id;

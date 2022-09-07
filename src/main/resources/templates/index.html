@@ -23,12 +23,12 @@
 
 			<!-- CAPTURAR Y MOSTRAR MIS DATOS -->
 			<tbody>
-				<tr th:each="cliente: ${clientes}">
-					<td th:each="${clientes.id}"></td>
-					<td th:each="${clientes.nombre}"></td>
-					<td th:each="${clientes.apellido}"></td>
-					<td th:each="${clientes.email}"></td>
-					<td th:each="${clientes.createAt}"></td>
+				<tr th:each="cliente: ${cliente}">
+					<td th:text="${cliente.id}"></td>
+					<td th:text="${cliente.nombre}"></td>
+					<td th:text="${cliente.apellido}"></td>
+					<td th:text="${cliente.email}"></td>
+					<td th:text="${cliente.createAt}"></td>
 				</tr>
 			</tbody>
 		</table>
